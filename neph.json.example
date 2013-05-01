@@ -1,0 +1,8 @@
+{
+    "database": {
+      "user": "nephology",
+      "pass": "youpass",
+      "host": "127.0.0.1",
+      "name": "nephology"
+    }
+}
