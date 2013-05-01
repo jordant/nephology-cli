@@ -11,10 +11,10 @@ use JSON::XS;
 # get command line flags
 my %opt = ();
 GetOptions (
-			\%opt, 'status_id=i', 'caste_id=i', "boot_mac=s", "domain=s",
+            \%opt, 'status_id=i', 'caste_id=i', "boot_mac=s", "domain=s",
             "primary_ip=s", "hostname=s", "asset_tag=i", "sort_by=s",
-			"update", "caste-show=i", "config-file=s"
-			);
+            "update", "caste-show=i", "config-file=s"
+            );
 
 $opt{'sort_by'} = "asset_tag" unless ($opt{'sort_by'}); #default sort 
 $opt{'config-file'} = "neph.json" unless ($opt{'config-file'}); #default config
